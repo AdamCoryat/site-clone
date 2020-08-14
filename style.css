@@ -1,0 +1,39 @@
+body { 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+}
+header{ 
+
+} 
+
+main{
+  flex-grow: 1;
+} 
+
+footer{
+
+ }
+
+
+
+
+
+
+.bg-hero{
+  background-image: url("./hero1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.car-gen{
+  position: relative;
+  bottom: 0;
+  transform: translateY(30%);
+  z-index: 2;
+}
+
+.side-picture{
+  height: 60vh;
+  max-width: 100%;
+}
