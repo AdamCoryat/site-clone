@@ -23,7 +23,7 @@ main{
 .car-gen{
   position: absolute;
   bottom: 0;
-  transform: translateY(30%);
+  transform: translateY(20%);
   z-index: 2;
 }
 @media (max-width: 600px) {
