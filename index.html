@@ -1,157 +1,253 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="style.css">
   <title>Clone-site</title>
 </head>
 
-<nav class="navbar sticky-top navbar-light bg-primary">
-  <a class="navbar-brand" href="#"><i class="fa fa-flag-checkered" aria-hidden="true"></i>
-    Nissan Skyline R34</a>
+<body>
+  <main class="container-fluid">
+    <nav class="row navbar sticky-top navbar-light bg-primary shadow">
+      <a class="navbar-brand text-light" href="#"><i class="fa fa-flag-checkered" aria-hidden="true"></i>
+        Nissan Skyline R34</a>
     </nav>
-      
-      <main class="container-fluid">
-        <div class="row bg-hero text-light">
-          <form class="col-12 col-md-4 p-2 bg-dark">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="form-group">
-                <label for="inputPassword4">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
-              </div>
+    <div class="row bg-hero text-light">
+      <div class="col-12 col-md-4">
+        <form class="mx-3 my-5 p-4 bg-dark shadow rounded animated slideInLeft delay-1s">
+          <h3>GTR News Letter</h3>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
             </div>
             <div class="form-group">
-              <label for="inputAddress">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign up</button>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="inputAddress2">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputCity">City</label>
-          <input type="text" class="form-control" id="inputCity">
+      <div class="col-md-8 d-none d-lg-block">
+        <div class="my-4 p-1 w-50">
+          <h1>Automotive Perfection</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam earum expedita cumque. Reiciendis, magnam
+            sapiente illum similique, laudantium enim odio exercitationem perspiciatis hic impedit molestiae? Officia
+            aliquam dicta maiores quos!</p>
         </div>
-        <div class="form-group col-md-4">
-          <label for="inputState">State</label>
-          <select id="inputState" class="form-control">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="form-group col-md-2">
-          <label for="inputZip">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Sign in</button>
-    </form>
-    <div class="col-md-8 d-none d-lg-block">
-      <h1>Text over Image</h1>
-    </div>
-  </div>
-  <div class="row bg-primary">
-    <div class="col-12 col-md-5 order-2 order-md-1 text-light p-4 text-center">
-   <h1><strong>Heritage of the Skyline</strong></h1>
-   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum amet totam rerum pariatur, dolorum incidunt et laudantium aliquid quod vitae, eveniet officia commodi velit accusantium placeat, dolorem ipsam maxime aspernatur?</p>
-    </div>
-    <div class="col-12 col-md-7 order-1 order-md-2 card car-gen d-inline">
-      <div class="card-header">
-        Quote2
-      </div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
       </div>
     </div>
+    <div id="history" class="row bg-primary">
+      <div class="col-12 col-md-5 order-2 order-md-1">
+        <div class="p-4 text-light text-center custom-font">
+          <h1 class="p-2 custom-font"><strong>Heritage of the Skyline</strong></h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum amet totam rerum pariatur, dolorum incidunt
+            et
+            laudantium aliquid quod vitae, eveniet officia commodi velit accusantium placeat, dolorem ipsam maxime
+            aspernatur?</p><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est fuga saepe, illo quisquam, dicta ad
+            autem
+            a, vero sint cum delectus sit quasi. Alias laboriosam ipsam ipsum commodi ea?Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Accusamus magnam, cumque veritatis totam harum sequi praesentium eaque, at
+            sunt
+            natus ut. Doloremque, consequatur. Ipsam, cupiditate optio! Esse magnam neque repudiandae.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 order-1 order-md-2">
+        <div class="card car-gen bg-dark shadow text-light">
+          <div class="card-header">
+            Unbeatable Design
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
 
-  </div>
-  <div class="row bg-dark">
-    <div class="col-12 col-md-3 text-center">
-      <img src="sidepicture.jpg" class="side-picture m-3" alt="">
     </div>
-    <div class="col-12 col-md-9 card">
-      <h5 class="card-header">Featured</h5>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div id="motor" class="row bg-secondary">
+      <div class="col-12 col-md-3 text-center">
+        <img src="sidepicture.jpg" class="side-picture m-3 rounded shadow" alt="">
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-md-4 card order-3 order-md-1" style="width: 18rem;">
-      <img src="//placehold.it/100x100/" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title1</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="col-12 col-md-4 order-1 order-md-2 card" style="width: 18rem;">
-      <img src="//placehold.it/100x100/" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">largeCard title2</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="col-12 col-md-4 order-2 order-md-3 card" style="width: 18rem;">
-      <img src="//placehold.it/100x100/" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title3</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 card">
-      <div class="card-header">
-        Quote
-      </div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</main>
-
-<footer class="page-footer font-small mdb-color darken-3 pt-4">
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9 mb-4">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
-            allowfullscreen></iframe>
+      <div class="col-12 col-md-9 align-self-center animated slideInRight delay-3s">
+        <div class="card bg-primary m-5 p-3 shadow">
+          <div class="card-body">
+            <h5 class="card-header text-center bg-dark text-light">Different Versions</h5>
+            <p class="card-text p-2 text-light"><i class="fa fa-cog" aria-hidden="true"></i> <strong>Car Model
+                ID</strong>
+              Lorem
+              ipsum
+              dolor sit amet consectetur
+              adipisicing elit. Nam maxime voluptatem eos?
+              Reprehenderit laborum architecto nostrum eum provident accusantium necessitatibus.
+            </p>
+            <p class="card-text p-2 text-light"><i class="fa fa-cog" aria-hidden="true"></i> <strong>Car Model
+                ID</strong>
+              Lorem
+              ipsum
+              dolor sit amet consectetur
+              adipisicing elit. Nam maxime voluptatem eos?
+              Reprehenderit laborum architecto nostrum eum provident accusantium necessitatibus.
+            </p>
+            <p class="card-text p-2 text-light"><i class="fa fa-cog" aria-hidden="true"></i> <strong>Car Model
+                ID</strong>
+              Lorem
+              ipsum
+              dolor sit amet consectetur
+              adipisicing elit. Nam maxime voluptatem eos?
+              Reprehenderit laborum architecto nostrum eum provident accusantium necessitatibus.
+            </p>
+            <p class="card-text p-2 text-light"><i class="fa fa-cog" aria-hidden="true"></i> <strong>Car Model
+                ID</strong>
+              Lorem
+              ipsum
+              dolor sit amet consectetur
+              adipisicing elit. Nam maxime voluptatem eos?
+              Reprehenderit laborum architecto nostrum eum provident accusantium necessitatibus.
+            </p>
+            <p class="card-text p-2 text-light"><i class="fa fa-cog" aria-hidden="true"></i> <strong>Car Model
+                ID</strong>
+              Lorem
+              ipsum
+              dolor sit amet consectetur
+              adipisicing elit. Nam maxime voluptatem eos?
+              Reprehenderit laborum architecto nostrum eum provident accusantium necessitatibus.
+            </p>
+            <p class="card-text p-2 text-light"><i class="fa fa-cog" aria-hidden="true"></i> <strong>Car Model
+                ID</strong>
+              Lorem
+              ipsum
+              dolor sit amet consectetur
+              adipisicing elit. Nam maxime voluptatem eos?
+              Reprehenderit laborum architecto nostrum eum provident accusantium necessitatibus.
+            </p>
+            <a href="#" class="btn btn-primary bg-dark">Go somewhere</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-  </div>
-</footer>
-<script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script> <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous'></script> <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous'></script>
+    <div class="row bg-dark">
+      <div class="col-12 col-md-4 order-3 order-md-1 align-self-center">
+        <div class="card m-3 p-2 bg-primary text-light shadow">
+          <img src="GTR.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">GTR News and Updates</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consequuntur? Deleniti,
+              culpa possimus autem impedit, praesentium totam facilis eligendi temporibus quae quidem reprehenderit
+              nobis
+              qui commodi asperiores, molestias aliquam esse.</p>
+            <a href="#" class="btn btn-dark">Sign up</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 order-1 order-md-2">
+        <div class="card m-md-3 p-md-2 m-1 p-1 bg-primary text-light shadow">
+          <img src="engine-card.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">RB26DETT Power House</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quia possimus quod.
+              Fugit tenetur porro tempore hic voluptate alias iusto repellendus veritatis officiis accusantium minus
+              neque, perferendis officia, ad illum.</p>
+            <a href="#motor" class="btn btn-dark">Engines</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 order-2 order-md-3 align-self-center">
+        <div class="card m-3 p-2 bg-primary text-light shadow">
+          <img src="history-card.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Skyline History</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eum ea officia
+              impedit
+              voluptatem maiores, omnis perferendis velit explicabo consectetur. Nesciunt ad facilis praesentium
+              excepturi
+              consequatur alias, incidunt similique voluptas!</p>
+            <a href="#history" class="btn btn-dark">History</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-dark">
+      <div class="col-12">
+        <div class="card bg-primary m-2 p-3 align-items-center text-light shadow">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer text-light">Someone famous in <cite
+                  title="Source Title text-light">Source
+                  Title</cite></footer>
+            </blockquote>
+            </>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer class="page-footer font-small darken-3 pt-4 bg-secondary">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LRKCiS7xBjE"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">Made With Love By A.D.D Designs LLC.
+    </div>
+  </footer>
+</body>
+<script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
+  integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'
+  integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
+  integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous'></script>
+
 </html>
